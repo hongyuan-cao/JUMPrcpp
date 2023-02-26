@@ -6,7 +6,7 @@ Replicability analysis of high-throughput experiments, which implements JUMP wit
 
 ```R
 require("devtools")
-devtools::install_github("YanLi15/JUMPrcpp")
+devtools::install_github("hongyuan-cao/JUMPrcpp")
 ```
 
 # A numeric example
