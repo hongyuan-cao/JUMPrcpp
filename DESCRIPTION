@@ -1,0 +1,14 @@
+Package: JUMPrcpp
+Type: Package
+Title: Replicability analysis of high-throughput experiments implemented with Rcpp
+Version: 0.1.0
+Author: Yan Li, Pengfei Lyu, Xiaoquan Wen, Hongyuan Cao
+Maintainer: Yan Li <yanli_@jlu.edu.cn>
+Depends: R (>= 4.1.2), splines
+Description: The package implements a computationally scalable FDR control procedure for replicability analysis based on maximum p-values.
+License: GPL>=2
+Encoding: UTF-8
+LazyData: true
+Imports: Rcpp (>= 1.0.9)
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.2.3
