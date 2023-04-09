@@ -27,7 +27,7 @@ JUMP <- function(pvals1, pvals2, alpha = 0.05, lambda = seq(0.01, 0.8, 0.01)){
   xi10.hat = max(0, as.numeric(pred3[which.min(diff3)] - xi00.hat))
 
   xi.hat = c(xi00.hat, xi01.hat, xi10.hat)
-  res <- jump_cutoff(pa, pb, xi.hat, 0.05)
+  res <- jump_cutoff(pvals1, pvals2, xi.hat, 0.05)
 
   return(list(p.max = res$p_max, jump.thr = res$thr_jump))
 }
