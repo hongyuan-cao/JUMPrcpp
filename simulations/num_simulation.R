@@ -1,4 +1,4 @@
-source("./R/methods.R")
+source("./funcs/methods.R")
 library(JUMPrcpp)
 library(splines)
 

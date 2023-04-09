@@ -2,7 +2,7 @@
 ## Compute FDR and Power of all methods across 10 replicates
 
 library(SPARK)
-library(JUMP)
+library(JUMPrcpp)
 source('./funcs/SimuFunc.R')
 
 n.rep    = 10
