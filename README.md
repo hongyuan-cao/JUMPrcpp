@@ -1,6 +1,6 @@
 # JUMPrcpp
 
-Replicability analysis of high-throughput experiments, which implements JUMP with Rcpp.
+Joint replicability analysis of high-throughput experiments using maximum of $p$-values across two studies.
 
 # Installation
 
@@ -31,3 +31,15 @@ alpha <- 0.05
 jump.obj <- JUMP(pvals1, pvals2, alpha = alpha)
 rep.idx <- which(jump.obj$p.max <= jump.obj$jump.thr)
 ```
+
+# Data and reproducibility
+
+R functions supporting the simulations are contained in the “funcs” folder.
+
+R scripts to reproduce the numeric and realistic simulations can be found in the “simulations” folder.
+
+R scripts to reproduce the data analysis results are summarized in the “data analysis” folder.
+
+The spatially resolved transcriptomic data used in the data analysis can be downloaded from the links provided in the *Data Availability Statement* in the manuscript.
+
+Raw count data and some intermediate results supporting the reproducibility of results can be downloaded [here](https://drive.google.com/drive/folders/1nEMBS7Nwqn6JXyRsiBSMrrqyFeB3rSD_?usp=share_link).
