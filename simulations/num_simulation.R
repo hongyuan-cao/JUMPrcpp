@@ -86,7 +86,7 @@ for(i in 1:n){
     pa[which(pa==0)] <- 1e-15
     pb[which(pb==0)] <- 1e-15
     res.rv18 <- radjust_sym(pa, pb, input_type = "all", directional_rep_claim = FALSE,
-                            variant = "adaptive", alpha = alpha)
+                            variant = "non-adaptive-with-alpha-selection", alpha = alpha)
     rv18 <- rep(1, m)
     rv18[as.numeric(res.rv18$results_table$name)] <- res.rv18$results_table$r_value
     res$radjust$fdp[i] <- sum(rv18 <= alpha & !truth)/max(sum(rv18 <= alpha), 1)
